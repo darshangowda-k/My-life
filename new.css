@@ -1,0 +1,159 @@
+
+.main-heading{
+       font-family: 'Cinzel', serif;
+    font-size: 70px;
+    font-weight: bolder;
+    color: #d1e3ff;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-shadow: 0 0 10px #9b7dd5,
+                 0 0 20px #3a429a,
+                 0 0 40px #000000;
+    -webkit-text-stroke: 0.0px rgb(7, 7, 7);
+    background: url("https://wallpapercave.com/wp/wp12025797.jpg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 25px;
+    padding: 150px;
+       margin: 0;
+      height:150px;
+      position: relative;   
+
+}
+.main-background{
+  margin: 0;
+  height: 200vh;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  background: linear-gradient(-45deg, #ff6b6b, #6b73ff, #8b2f83, #92fe9d);
+  background-size: 400% 400%;
+  animation: gradientMove 8s ease infinite;
+
+}
+.phara-garph{
+    color: rgb(250, 246, 246);    
+    font-family: 'Orbitron', sans-serif;
+    text-align: center;
+}
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.titel{
+  position: absolute;
+  top: 0px;
+  left: 30px;
+
+  font-family: 'Orbitron', sans-serif; 
+  font-size: 40px;
+  letter-spacing: 4px;
+
+  background: linear-gradient(90deg,#00f7ff,#00ff9d,#00f7ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  z-index: 10;
+
+  opacity: 0;
+  transform: translateY(-40px);
+  animation: logoReveal 2s ease forwards;
+}
+
+@keyframes logoReveal{
+  0%{
+    opacity:0;
+    transform: translateY(-40px) scale(0.8);
+  }
+
+  60%{
+    opacity:1;
+    transform: translateY(5px) scale(1.1);
+    text-shadow:
+    0 0 10px #00f7ff,
+    0 0 20px #00ff9d;
+  }
+
+  100%{
+    opacity:1;
+    transform: translateY(0) scale(1);
+    text-shadow:none;
+  }
+}   
+.content{
+  text-align: left;
+    max-width: 900px;
+    margin: auto;
+    line-height: 1.7;
+}
+.image{
+    float: right;
+    width: 300px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+}
+.story-box{
+    max-width: 900px;
+    margin: auto;
+    padding: 25px;
+    background: rgba(0,0,0,0.3);
+    border-radius: 15px;
+    line-height: 1.7;
+ font-family: 'Poppins', sans-serif;
+   overflow: auto;
+}
+.paraggraph-heading{
+color: #000000;
+}
+.creadit{
+  text-align: center;
+}
+footer{
+    text-align: center;
+    padding: 20px;
+    background: #0a0a0a;
+    font-family: 'Orbitron', sans-serif;
+    color: #ffffff;
+}
+
+.dstudio{
+    color: #00f7ff;
+    font-weight: bold;
+    animation: glow 2s ease-in-out infinite alternate;
+    transition: 0.3s;
+}
+
+/* glow animation */
+@keyframes glow{
+    from{
+        text-shadow:
+        0 0 5px #00f7ff,
+        0 0 10px #00f7ff,
+        0 0 20px #00f7ff;
+    }
+    to{
+        text-shadow:
+        0 0 10px #00f7ff,
+        0 0 20px #00f7ff,
+        0 0 40px #00f7ff;
+    }
+}
+
+/* hover effect */
+.dstudio:hover{
+    color: #ffffff;
+    text-shadow:
+    0 0 10px #00f7ff,
+    0 0 20px #00f7ff,
+    0 0 50px #00f7ff;
+}
